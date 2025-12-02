@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Gallery Fetch</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Галерея фотографій</title>
 </head>
 <body>
-    <header>
-        <h1>FOTO IMAGE LIST</h1>
-    </header>
-    <main>
-        <div id="gallery" class="gallery"></div>
-        <div class="buttons">
-            <button id="loadMore">Завантажити ще 4 картинки</button>
-            <button id="clearGallery">Очистити галерею</button>
-            <button id="removeLast">Видалити останню картинку</button>
-            <button id="reverseGallery">Перевернути галерею</button>
-            <button id="shuffleGallery">Перемішати галерею</button>
+
+    <div class="container">
+        <h1>Моя Галерея</h1>
+        
+        <div class="gallery" id="gallery"></div>
+
+        <div class="controls">
+            <button id="btn-load" class="btn btn-primary">Завантажити ще</button>
+            <button id="btn-clear" class="btn btn-danger">Очистити</button>
+            <button id="btn-remove" class="btn btn-warning">Видалити останню</button>
+            <button id="btn-reverse" class="btn btn-info">Перевернути</button>
         </div>
-    </main>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
